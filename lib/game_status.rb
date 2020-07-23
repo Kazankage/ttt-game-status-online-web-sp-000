@@ -5,11 +5,13 @@ end
 
 # Define your WIN_COMBINATIONS constant
 
-x_win_diagonal = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
-winner(x_win_diagonal) #=> "X"
- 
-o_win_center_column = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
-winner(o_win_center_column) #=> "O"
- 
-no_winner_board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
-winner(no_winner_board) #=> nil
+WIN_COMBINATIONS = [
+  [0,1,2],
+  [3,4,5],
+  [6,7,8],
+  [0,3,6],
+  [1,4,7],
+  [2,5,8],
+  [0,4,8],
+  [6,4,2]
+]
